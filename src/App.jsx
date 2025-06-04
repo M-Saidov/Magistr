@@ -1,20 +1,38 @@
-import React from "react";
-import styles from "./components/styles/styles.css"
-import {changeInit} from "./redux-state/reduces/initial"
-import { useSelector, useDispatch } from "react-redux";
+import React, {  useCallback, useEffect } from "react";
+import Header from "./components/views/Header";
+import Footer from "./components/views/Footer";
+import Body from "./components/views/Body";
+import mainCSS from "./components/styles/main.css";
 
-const { InitialText } = styles;
+import { setClientMode, setSectionPadding } from "./redux-state/reduces/initial"
+import { useDispatch, useSelector } from "react-redux";
+
 
 function App() {
+
   const dispatch = useDispatch();
-  dispatch(changeInit());
-  const isInit = useSelector(state => state.initial.init) ? '' : 'not';
+
+  const recalcWindowSize = useCallback(() => {
+    const newClientMode = window.innerWidth <= 992 ? 'mobile' : 'desktop';
+    dispatch(setClientMode(newClientMode));
+    
+    const newSectionPadding = window.innerWidth <= 720 ? '20px' : 
+    window.innerWidth <= 1120 ? '50px' : '100px';
+    dispatch(setSectionPadding(newSectionPadding));
+  }, [dispatch]);
+
+  useEffect(() => {
+    recalcWindowSize();
+    
+    window.addEventListener('resize', recalcWindowSize);
+    return () => window.removeEventListener('resize', recalcWindowSize);
+  }, [recalcWindowSize]);
 
   return (
     <>
-      <InitialText>
-        Welcome to the "template-1-usual"! <br /> Redux is {isInit} compilled
-      </InitialText>
+      <Header/>
+      <Body />
+      <Footer/>
     </>
   );
 }

@@ -1,13 +1,6 @@
 {
-  "short_name": "Template-1-usual",
-  "name": "T-1-us",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
+  "short_name": "Magistr",
+  "name": "Репетиторский центр Магистр",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

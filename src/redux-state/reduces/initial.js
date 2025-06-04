@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     init: false,
+    clientMode: 'mobile',
+    sectionPadding: '20px',
 }
 
 export const initialReducer = createSlice({
@@ -9,10 +11,16 @@ export const initialReducer = createSlice({
     initialState,
     reducers: {
         changeInit: (state) => {
-            state.init = !state.init;
+            state.init = true;
+        },
+        setClientMode: (state, action) => {
+            state.clientMode = action.payload
+        },
+        setSectionPadding: (state, action) => {
+            state.sectionPadding = action.payload
         }
     }
 });
 
-export const { changeInit } = initialReducer.actions
+export const { changeInit, setClientMode, setSectionPadding } = initialReducer.actions
 export default initialReducer.reducer
