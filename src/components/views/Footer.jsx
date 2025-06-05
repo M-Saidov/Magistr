@@ -44,7 +44,16 @@ const Footer = () => {
                         </footerCSS.Nav>
                         <footerCSS.Adress>
                             <h3>адрес</h3>
-                            <span>г.Махачкала, ул. Ирчи Казака д. 46а</span>
+
+                            
+                            <a href="https://yandex.ru/maps/org/magistr/137602209975/?indoorLevel=1&ll=47.503371%2C42.964623&z=16.57" target="_blank" rel="noopener noreferrer"><span style={{marginBottom: '20px'}}>г. Махачкала, ул. Ирчи Казака, д. 46а</span></a>
+                            <h3>контакты</h3>
+                            <a href="tel:79289785785">
+                                <span>+7 (928) 978 57-85</span>
+                            </a>
+                            <a href="tel:79896501660">
+                                <span>+7 (989) 650 16-60</span>
+                            </a>
                         </footerCSS.Adress>
                     </footerCSS.InfoContainer>
                     <footerCSS.Map>

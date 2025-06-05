@@ -19,6 +19,7 @@ const BestTeachers = () => {
                         <bestCSS.Course>Математика</bestCSS.Course>
                         <bestCSS.Course>Русский язык</bestCSS.Course>
                         <bestCSS.Course>Английский язык</bestCSS.Course>
+                        <bestCSS.Course>Арабский язык</bestCSS.Course>
                         <bestCSS.Course>Каллиграфия</bestCSS.Course>
                         <bestCSS.Course>Скорочтение</bestCSS.Course>
                     </bestCSS.CoursesContainer>

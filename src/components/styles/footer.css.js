@@ -81,10 +81,12 @@ const footerCSS = {
             line-height: 28px;
         }
         span{
+            display: block;
             color: rgb(0, 0, 0);
             font-size: 14px;
             font-weight: 500;
             line-height: 17px;
+            cursor: pointer;
         }
         @media (max-width: 992px) { 
             margin-bottom: 11px;
