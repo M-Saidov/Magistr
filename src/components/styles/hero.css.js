@@ -42,11 +42,17 @@ const heroCSS = {
     Title: styled.div`
         /* margin: 0 0 15px 0; */
         color: rgb(0, 0, 0);
-        font-size: 9vw;
-        font-weight: 600;
-        line-height: 9vw;
-        letter-spacing: 0.32rem;
+        font-family: "Pacifico", cursive;
+        font-size: 7vw;
+        font-weight: 400;
+        line-height: 7vw;
+        letter-spacing: 0.62rem;
         text-transform: uppercase;
+        @media (max-width: 600px){
+            font-size: 9vw;
+            line-height: 9vw;
+            letter-spacing: 0.42rem;
+        }
     `,
     Subtitle: styled.div`
         margin: 9px 0 0 83px;

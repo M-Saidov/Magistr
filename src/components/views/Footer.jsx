@@ -49,7 +49,7 @@ const Footer = () => {
                             <a href="https://yandex.ru/maps/org/magistr/137602209975/?indoorLevel=1&ll=47.503371%2C42.964623&z=16.57" target="_blank" rel="noopener noreferrer"><span style={{marginBottom: '20px'}}>г. Махачкала, ул. Ирчи Казака, д. 46а</span></a>
                             <h3>контакты</h3>
                             <a href="tel:79289785785">
-                                <span>+7 (928) 978 57-85</span>
+                                <span>+7 (9289) 785&nbsp; 785</span>
                             </a>
                             <a href="tel:79896501660">
                                 <span>+7 (989) 650 16-60</span>
