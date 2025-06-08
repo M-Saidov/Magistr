@@ -42,9 +42,8 @@ const heroCSS = {
     Title: styled.div`
         /* margin: 0 0 15px 0; */
         color: rgb(0, 0, 0);
-        font-family: "Pacifico", cursive;
         font-size: 7vw;
-        font-weight: 400;
+        font-weight: 800;
         line-height: 7vw;
         letter-spacing: 0.62rem;
         text-transform: uppercase;

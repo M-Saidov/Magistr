@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { setActiveButton } from "../../redux-state/reduces/header";
 import mainCSS from "../styles/main.css";
 import Hero from "../blocks/Hero";
@@ -12,7 +12,6 @@ import Chat from '../../img/Body/Chat.svg';
 
 const Body = () => {
     const dispatch = useDispatch();
-    const active = useSelector(state => (state.headerReducer.activeButton));
     const sectionsRef = useRef([]);
 
     useEffect(() => {
