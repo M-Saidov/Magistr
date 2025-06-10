@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 const footerCSS = {
     Footer: styled.section`
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 486px;
         padding: 35px 40px;
@@ -21,6 +24,7 @@ const footerCSS = {
     FooterContainer: styled.div`
         height: 100%;
         width: 100%;
+        max-width: 1440px;
         position: relative;
         display: flex;
         justify-content: space-between;

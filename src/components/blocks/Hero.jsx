@@ -22,10 +22,10 @@ const Hero = forwardRef((props, ref) => {
                     <heroCSS.HeroImg>
                         <img src={Poster} alt="" />
                     </heroCSS.HeroImg>
-                    <NavButton href='#best'>
-                        <img src={Arrow} alt="" />
-                    </NavButton>
                 </heroCSS.HeroContainer>
+                <NavButton href='#best'>
+                        <img src={Arrow} alt="" />
+                </NavButton>
             </heroCSS.Hero>
         </>
     );

@@ -21,6 +21,9 @@ const heroCSS = {
     HeroContainer: styled(mainCSS.NewSectionContainer)`
         align-items: start;
         justify-content: start;
+        @media (min-width: 1600px){
+            position: relative;
+        }
         @media (max-width: 992px){
             flex-direction: column-reverse;
             align-items: center;
@@ -47,6 +50,10 @@ const heroCSS = {
         line-height: 7vw;
         letter-spacing: 0.62rem;
         text-transform: uppercase;
+        @media (min-width: 1600px){
+            font-size:9.5rem;
+            line-height:9.5rem;
+        }
         @media (max-width: 600px){
             font-size: 9vw;
             line-height: 9vw;
@@ -61,6 +68,10 @@ const heroCSS = {
         font-weight: 300;
         line-height: 2.2vw;
         letter-spacing: 0.08rem;
+        @media (min-width: 1600px){
+            font-size:2.5rem;
+            line-height:2.5rem;
+        }
         @media (max-width: 992px){
             font-size: 14.95px;
             margin: 9px 0 8px 0;
