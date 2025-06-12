@@ -5,6 +5,8 @@ import First from "../../img/BlockAdvantages/1.png"
 import Man from "../../img/BlockAdvantages/man.png"
 import Cub from "../../img/BlockAdvantages/cub.png"
 import Sto from "../../img/BlockAdvantages/100.png"
+import Online from "../../img/BlockAdvantages/online.png"
+import Offline from "../../img/BlockAdvantages/offline.png"
 
 const Advantages = forwardRef((props, ref) => {
     const sectionPadding = useSelector(state => (state.initial.sectionPadding));
@@ -54,6 +56,36 @@ const Advantages = forwardRef((props, ref) => {
                         </advantagesCSS.BlockTitle>
                         <advantagesCSS.BlockDesk>
                             <span>Результаты говорят сами за себя</span>: наши ученики сдают ЕГЭ и ОГЭ на высокие баллы, поступают в вузы, выигрывают олимпиады
+                        </advantagesCSS.BlockDesk>
+                    </advantagesCSS.Block>
+                    <advantagesCSS.Block>
+                        <advantagesCSS.BlockImg src={Online} alt="" />
+                        <advantagesCSS.BlockTitle>
+                            Очный формат — живое общение и поддержка
+                        </advantagesCSS.BlockTitle>
+                        <advantagesCSS.BlockDesk>
+                            <span>Занимайтесь в наших аудиториях</span> — классическая атмосфера обучения
+                        </advantagesCSS.BlockDesk>
+                        <advantagesCSS.BlockDesk>
+                            <span>Возможность моментальной обратной связи</span>, общения с преподавателями и сверстниками
+                        </advantagesCSS.BlockDesk>
+                        <advantagesCSS.BlockDesk>
+                            Подходит тем, кто предпочитает <span>личное присутствие</span> и офлайн-взаимодействие
+                        </advantagesCSS.BlockDesk>
+                    </advantagesCSS.Block>
+                    <advantagesCSS.Block>
+                        <advantagesCSS.BlockImg src={Offline} alt="" />
+                        <advantagesCSS.BlockTitle>
+                            Онлайн-обучение — удобно и доступно из любой точки
+                        </advantagesCSS.BlockTitle>
+                        <advantagesCSS.BlockDesk>
+                            <span>Учитесь дистанционно</span> — дома или в поездке. Всё, что нужно, это интернет
+                        </advantagesCSS.BlockDesk>
+                        <advantagesCSS.BlockDesk>
+                            <span>Используем интерактивные платформы</span>, цифровые материалы и видеосвязь
+                        </advantagesCSS.BlockDesk>
+                        <advantagesCSS.BlockDesk>
+                            <span>Качество обучения сохраняется</span> на том же высоком уровне, что и при очных занятиях
                         </advantagesCSS.BlockDesk>
                     </advantagesCSS.Block>
                 </advantagesCSS.AdvantagesContainer>

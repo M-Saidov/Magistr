@@ -7,9 +7,10 @@ const advantagesCSS = {
     `,
     AdvantagesContainer: styled(mainCSS.NewSectionContainer)`
         display: grid;
-        min-height: 444px;
+        min-height: 705.96px;
         /* height: 444px; */
-        grid-template-rows: 59% 41%;
+        /* grid-template-rows: 37% 26% 37%; */
+        grid-template-rows: 1fr 0.7fr 1fr;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 26px;
         row-gap: 20px;
@@ -61,6 +62,12 @@ const advantagesCSS = {
                 img{
                     width: 190px;
                     bottom: -20px;
+                }
+            }
+            &:nth-child(4),
+            &:nth-child(5) {
+                img{
+                    width: 190px;
                 }
             }
         }
