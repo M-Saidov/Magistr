@@ -11,7 +11,7 @@ const BestTeachers = () => {
         <>
             <bestCSS.Best $pad={sectionPadding}>
                 <bestCSS.BestContainer>
-                    <bestCSS.Title id='best'>Подготовка с лучшими преподавателями!</bestCSS.Title>
+                    <bestCSS.Title id='best'>Обучение с лучшими преподавателями в Махачкале!</bestCSS.Title>
                     <bestCSS.CoursesContainer>
                         <bestCSS.Course>ЕГЭ</bestCSS.Course>
                         <bestCSS.Course>ОГЭ</bestCSS.Course>

@@ -42,7 +42,8 @@ const heroCSS = {
             align-items: center;
         }
     `,
-    Title: styled.div`
+    Title: styled.h1`
+        display: block;
         /* margin: 0 0 15px 0; */
         color: rgb(0, 0, 0);
         font-size: 7vw;
