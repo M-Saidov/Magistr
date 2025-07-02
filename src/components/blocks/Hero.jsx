@@ -17,7 +17,7 @@ const Hero = forwardRef((props, ref) => {
                 <heroCSS.HeroContainer>
                     <heroCSS.Info>
                         <heroCSS.Title>МАГИСТР</heroCSS.Title>
-                        <heroCSS.Subtitle>Путь к знаниям начинается здесь</heroCSS.Subtitle>
+                        <heroCSS.Subtitle>Учебный центр экспертов по ЕГЭ и ОГЭ в Махачкале</heroCSS.Subtitle>
                     </heroCSS.Info>
                     <heroCSS.HeroImg>
                         <img src={Poster} alt="" />

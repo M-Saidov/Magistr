@@ -34,7 +34,7 @@ const heroCSS = {
         position: absolute;
         top: 0;
     `,
-    Info: styled.div`
+    Info: styled.h1`
         z-index: 1;
         @media (max-width: 992px){
             display: flex;
@@ -42,9 +42,8 @@ const heroCSS = {
             align-items: center;
         }
     `,
-    Title: styled.h1`
+    Title: styled.span`
         display: block;
-        /* margin: 0 0 15px 0; */
         color: rgb(0, 0, 0);
         font-size: 7vw;
         font-weight: 800;
@@ -61,7 +60,9 @@ const heroCSS = {
             letter-spacing: 0.42rem;
         }
     `,
-    Subtitle: styled.div`
+    Subtitle: styled.span`
+        display: block;
+        max-width: 55%;
         margin: 9px 0 0 83px;
         color: rgb(0, 0, 0);
         font-size: 2.2vw;
@@ -74,11 +75,15 @@ const heroCSS = {
             line-height:2.5rem;
         }
         @media (max-width: 992px){
+            max-width: 100%;
+            text-align: center;
+            line-height: 17px;
             font-size: 14.95px;
             margin: 9px 0 8px 0;
         }
         @media (max-width: 350px){
             font-size: 12px;
+            line-height: 14px;
         }
     `,
     HeroImg: styled.div`
