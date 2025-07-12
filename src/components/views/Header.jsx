@@ -61,7 +61,7 @@ const Header = () => {
                             <NavButton isActive={buttonState[2]} href='#catalog'>Направления подготовки</NavButton>
                             <NavButton isActive={buttonState[3]} href='#reviews'>Отзывы</NavButton>
                             <NavButton isActive={buttonState[4]} href='#contacts'>Контакты</NavButton>
-                            <headerCSS.PriceButton><span>Узнать стоимость</span></headerCSS.PriceButton>
+                            <headerCSS.PriceButton href="https://wa.me/79289785785?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20стоимость%20обучения%20в%20вашем%20центре." target="_blank" rel="noopener noreferrer"><span>Узнать стоимость</span></headerCSS.PriceButton>
                         </headerCSS.MenuDesktopContainer>}
                     {clientMode === 'mobile' && <Burger ref={burgerRef} />}
                 </headerCSS.HeaderContainer>
